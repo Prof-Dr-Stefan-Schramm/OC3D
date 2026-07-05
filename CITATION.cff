@@ -1,7 +1,5 @@
 # Citation metadata for OC3D (Citation File Format 1.2.0)
 # GitHub renders this as a "Cite this repository" button.
-# TODO before commit: replace the ORCID placeholder,
-# and add the Zenodo DOI after the first archived release.
 cff-version: 1.2.0
 message: "If you use OC3D in teaching or research, please cite it as below."
 type: software
