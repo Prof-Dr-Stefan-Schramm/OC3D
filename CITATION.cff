@@ -9,15 +9,15 @@ authors:
     given-names: "Stefan"
     affiliation: "HTW Dresden — University of Applied Sciences, Dresden, Germany"
     orcid: "https://orcid.org/0000-0002-6109-0893"
-version: "1.0.0"
+version: "1.0.1"
 date-released: "2026-07-05"
 license: MIT
 repository-code: "https://github.com/Prof-Dr-Stefan-Schramm/OC3D"
 url: "https://prof-dr-stefan-schramm.github.io/OC3D/"
-# identifiers:
-#   - type: doi
-#     value: "10.5281/zenodo.XXXXXXX"
-#     description: "Zenodo archive of release v1.0.0"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21203168"
+    description: "Zenodo archive of release v1.0.1"
 keywords:
   - "organic chemistry"
   - "chemical education"
