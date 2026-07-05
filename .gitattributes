@@ -1,0 +1,13 @@
+# Normalize line endings: store text as LF in the repo and keep LF in the
+# working tree on all platforms. Stops the "LF will be replaced by CRLF" warnings.
+* text=auto eol=lf
+
+# Binary assets — never modify or diff these as text
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+*.ico  binary
+*.pdf  binary
+*.zip  binary
