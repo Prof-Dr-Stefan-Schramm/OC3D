@@ -1,0 +1,40 @@
+# Citation metadata for OC3D (Citation File Format 1.2.0)
+# GitHub renders this as a "Cite this repository" button.
+# TODO before commit: replace the ORCID placeholder,
+# and add the Zenodo DOI after the first archived release.
+cff-version: 1.2.0
+message: "If you use OC3D in teaching or research, please cite it as below."
+type: software
+title: "OC3D — Organic Chemistry in Interactive 3D: An Open-Source, Browser-Based 3D Learning Environment for Reaction Mechanisms, Conformational Analysis, and Stereochemistry in Introductory Organic Chemistry"
+authors:
+  - family-names: "Schramm"
+    given-names: "Stefan"
+    affiliation: "HTW Dresden — University of Applied Sciences, Dresden, Germany"
+    orcid: "https://orcid.org/0000-0002-6109-0893"
+version: "1.0.0"
+date-released: "2026-07-05"
+license: MIT
+repository-code: "https://github.com/Prof-Dr-Stefan-Schramm/OC3D"
+url: "https://prof-dr-stefan-schramm.github.io/OC3D/"
+# identifiers:
+#   - type: doi
+#     value: "10.5281/zenodo.XXXXXXX"
+#     description: "Zenodo archive of release v1.0.0"
+keywords:
+  - "organic chemistry"
+  - "chemical education"
+  - "3D visualization"
+  - "reaction mechanisms"
+  - "stereochemistry"
+  - "conformational analysis"
+  - "interactive learning"
+  - "WebGL"
+  - "Three.js"
+  - "AI-assisted development"
+abstract: >-
+  OC3D is a single-file, trilingual (German/English/French), browser-based
+  learning environment for introductory organic chemistry. It provides 33
+  didactically sequenced interactive 3D modules covering reaction mechanisms
+  with synchronized energy profiles, conformational analysis, stereochemistry,
+  electronic effects, and aromaticity. The application requires no
+  installation and collects no user data.
