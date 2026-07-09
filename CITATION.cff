@@ -9,8 +9,8 @@ authors:
     given-names: "Stefan"
     affiliation: "HTW Dresden — University of Applied Sciences, Dresden, Germany"
     orcid: "https://orcid.org/0000-0002-6109-0893"
-version: "1.0.1"
-date-released: "2026-07-05"
+version: "1.0.2"
+date-released: "2026-07-09"
 license: MIT
 repository-code: "https://github.com/Prof-Dr-Stefan-Schramm/OC3D"
 url: "https://prof-dr-stefan-schramm.github.io/OC3D/"
