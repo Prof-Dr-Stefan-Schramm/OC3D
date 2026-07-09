@@ -16,8 +16,8 @@ repository-code: "https://github.com/Prof-Dr-Stefan-Schramm/OC3D"
 url: "https://prof-dr-stefan-schramm.github.io/OC3D/"
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.21203168"
-    description: "Zenodo archive of release v1.0.1"
+    value: "10.5281/zenodo.21203167"
+    description: "Zenodo concept DOI — always resolves to the latest version"
 keywords:
   - "organic chemistry"
   - "chemical education"
