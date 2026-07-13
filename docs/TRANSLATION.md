@@ -1,6 +1,6 @@
 # Internationalization (i18n) Architecture & Translation Guide
 
-OC3D ships trilingual (German · English · French). This document explains how the translation layer works and how to contribute a new language.
+OC3D ships in four languages (German · English · French · Spanish). This document explains how the translation layer works and how to contribute a new language.
 
 ## 1. How it works
 
@@ -19,7 +19,7 @@ OC3D ships trilingual (German · English · French). This document explains how 
 
 ## 2. Hard rules
 
-1. **Key-for-key parity.** Every language dictionary must contain **exactly the same keys in the same order** as `TR.en` (currently 1,210 entries). No additions, omissions, or reordering — parity is validated automatically and a mismatch is a release blocker.
+1. **Key-for-key parity.** Every language dictionary must contain **exactly the same keys in the same order** as `TR.en` (currently 1,233 entries). No additions, omissions, or reordering — parity is validated automatically and a mismatch is a release blocker.
 2. **Translate values, never keys.** The German keys are shared infrastructure.
 3. **Preserve embedded HTML.** Many values contain markup (`<b>`, `<sub>`, `<span class=...>`). Keep tags, attributes, and structure identical; translate only the human-readable text between them.
 4. **Escape `</` as `<\/`** inside dictionary values (they live inside a `<script>` block).
@@ -34,7 +34,7 @@ Translating the German source into a new language is not string-by-string dictio
 - **Established didactic vocabulary** — use the terms actually taught in that language's classrooms, not literal translations of the German words.
 - **Note-label conventions** — fixed renderings for the recurring German labels Merksatz / Hinweis / Achtung.
 - **Locale typography** — decimal separator, quotation marks, spacing rules, as customary in the target language.
-- **Terminology decisions with chemical significance** — made once, applied consistently across all 1,210 entries, and signed off by the domain expert before release.
+- **Terminology decisions with chemical significance** — made once, applied consistently across all 1,233 entries, and signed off by the domain expert before release.
 
 **Worked example — the French convention sheet** (shown only to illustrate what such a sheet looks like): IUPAC-FR naming (éthanal, halogénoalcane, acide éthanoïque); classroom vocabulary chaise/bateau/demi-chaise, forme mésomère, hybride de résonance, groupe partant, ÉT for transition state; note labels À retenir / Remarque / Attention; decimal comma, « guillemets », non-breaking spaces before tall punctuation; and the expert-approved decision to render German pK<sub>s</sub> as pK<sub>a</sub>, matching international usage.
 
@@ -49,7 +49,7 @@ Translating the German source into a new language is not string-by-string dictio
 1. Write your convention sheet (§3) and have the domain expert approve the chemistry-significant decisions.
 2. Copy the complete `TR.en` block and rename it (e.g., `TR.es`) — **purely as a structural template**, to inherit the exact key set and key order required for parity. Then replace every value with a translation **of the German key** into the target language, following §2 and §3. The English (or French) values may be consulted as an interpretation aid, but the German key is the sole authoritative source. Flag any machine-drafted entries for expert review.
 3. Register the new language in the language-switcher UI and in `setLang()` (follow the existing `fr` wiring as the template).
-4. Validate: key parity (1,210/1,210 against `TR.en`), no invisible-character corruption, `node --check` passes, language switching round-trips DE → new → EN → new without residue.
+4. Validate: key parity (1,233/1,233 against `TR.en`), no invisible-character corruption, `node --check` passes, language switching round-trips DE → new → EN → new without residue.
 5. Have a chemist review all chemistry-bearing entries before release.
 
-Based on structural similarity to the existing languages, Spanish and Brazilian Portuguese are the most straightforward next candidates. Contributions welcome — please open an issue first.
+Spanish was added in v1.1.0 following exactly this checklist. Based on structural similarity to the existing languages, Brazilian Portuguese and Italian are the most straightforward next candidates. Contributions welcome — please open an issue first.

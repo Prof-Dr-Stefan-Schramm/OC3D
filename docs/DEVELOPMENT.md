@@ -33,7 +33,7 @@ Every build passed the following gates before release:
 1. **Syntax check** — `node --check` on the extracted JavaScript.
 2. **Structural validation** — a Python validator verifying the document structure (module containers, navigation entries, required UI elements).
 3. **Geometry validation** — automated checks of all 37 3D scene definitions across the 33 modules (bond-length and connectivity sanity against the standard values used by the app).
-4. **Translation coverage and parity** — the English and French dictionaries must be key-for-key identical in set and order (1,210/1,210 entries); missing or orphaned keys fail the build.
+4. **Translation coverage and parity** — the English, French, and Spanish dictionaries must be key-for-key identical in set and order (1,233/1,233 entries); missing or orphaned keys fail the build.
 5. **Headless smoke and i18n tests** — the app is loaded in `jsdom` with a Three.js proxy stub; language switching is exercised programmatically and the DOM is checked for untranslated or corrupted strings. 2D canvas drawings were additionally rendered headlessly (`@napi-rs/canvas`) for visual verification before delivery.
 6. **Hard regression baseline** — in the headless (non-WebGL) environment exactly 12 modules are expected to fail for WebGL-only reasons. Any deviation from this exact baseline — in either direction — blocks the release, because it indicates an unintended change.
 

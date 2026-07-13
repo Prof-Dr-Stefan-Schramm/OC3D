@@ -5,7 +5,7 @@
 **An open-source, browser-based 3D learning environment for reaction mechanisms, conformational analysis, and stereochemistry in introductory organic chemistry.**
 
 🔗 **Live app:** https://prof-dr-stefan-schramm.github.io/OC3D/
-📖 Trilingual: Deutsch · English · Français
+📖 Four languages: Deutsch · English · Français · Español
 🧪 33 didactically sequenced modules covering a full first-semester organic chemistry course
 
 ![OC3D overview](docs/screenshots/00_Overview.png)
@@ -28,7 +28,7 @@ The entire application is a **single HTML file**. There is nothing to install, n
 - **Electronic structure** — hybridization, σ/π bonds, ±I/±M effects, resonance with delocalized π clouds, carbocation/carbanion stability, pK<sub>a</sub> ladder, leaving groups and nucleophilicity
 - **Reactivity** — interactive S<sub>N</sub>/E decision tree, aromaticity and Hückel's rule, directing effects, addition and carbonyl reaction portfolios
 - **Guided didactic sequence** aligned with a complete OC-I curriculum, with mnemonics, cautions, and comparison tables
-- **Trilingual interface** (German, English, French) with instant language switching
+- **Quadrilingual interface** (German, English, French, Spanish) with instant language switching
 
 ## Getting started
 
@@ -58,7 +58,7 @@ The i18n architecture makes new languages straightforward to add — see [`docs/
 
 If you use OC3D in teaching or research, please cite it via the metadata in [`CITATION.cff`](CITATION.cff) (GitHub shows a "Cite this repository" button) or via the archived release:
 
-> Schramm, S. *OC3D — Organic Chemistry in Interactive 3D* (Version 1.0.2) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.21203167
+> Schramm, S. *OC3D — Organic Chemistry in Interactive 3D* (Version 1.1.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.21203167
 
 A peer-reviewed article describing OC3D is in preparation.
 
